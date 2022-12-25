@@ -1,0 +1,33 @@
+
+$primary: #fff000;
+// $background: #262626;
+$background: #fff;
+
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': $primary,
+    ),
+  ),
+);
+
+body {
+  background:$background;
+  height: 2000px;
+  .initial_loading {
+    color: $primary;
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+    text-shadow:0 0 10px $primary;
+    border:3px solid lighten($color: $background, $amount: 20);
+    &:before
+    {
+      border-top:3px solid $primary;
+      border-right:3px solid $primary;
+    }
+    span:before
+    {
+      background:$primary;
+      box-shadow:0 0 20px $primary;
+    }
+  }
+}

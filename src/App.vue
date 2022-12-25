@@ -1,10 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <TopHeader />
   <router-view />
 </template>
+
+<script lang="ts">
+import TopHeader from "@/components/TopHeader.vue";
+import { defineComponent } from "@vue/runtime-core";
+export default defineComponent({
+  components: {
+    TopHeader,
+  },
+});
+</script>
 
 <style lang="scss">
 #app {
