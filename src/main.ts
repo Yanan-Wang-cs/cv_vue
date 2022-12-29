@@ -5,7 +5,6 @@ import router from "./router";
 import store from "./store";
 import { getStaticFile } from "@/api/api";
 import "@/assets/style/index.scss";
-import "@/assets/style/theme/orange.scss";
 
 async function start() {
   const { data: config } = await getStaticFile("/config/config.json");
@@ -16,6 +15,7 @@ async function start() {
     zh,
   };
   console.log(config, en, zh, messages);
+  document.getElementsByTagName("body")[0].setAttribute("class", config.theme);
   const i18n = createI18n({
     locale: config.defaultLang,
     messages,

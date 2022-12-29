@@ -1,4 +1,5 @@
 {
     "defaultLang": "en",
-    "langs": ["en", "zh"]
+    "langs": ["en", "zh"],
+    "theme": "theme1"
 }

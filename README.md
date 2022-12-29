@@ -1,4 +1,4 @@
-# CV projects(Vue-cli3 + ts + i18n + element plus + eslint + prettier + sass + tailwindcss)
+# CV projects(Vue-cli3 + ts + i18n + eslint + prettier + sass + tailwindcss)
 
 ## Project setup
 ```
